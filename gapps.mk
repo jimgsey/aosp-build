@@ -14,15 +14,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-# Check Android Platform
-ifndef TARGET_ARCH
-$(error Android Platform is not set)
-endif
-
-# Check Android SDK version
-ifndef TARGET_SDK_VERSION
-$(error Android SDK version is not set)
-endif
+TARGET_ARCH := arm64
+TARGET_SDK_VERSION := 31
 
 # Common source
 GAPPS_COMMON_SOURCE := vendor/gapps/sources/$(TARGET_ARCH)/$(TARGET_SDK_VERSION)
